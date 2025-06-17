@@ -1,35 +1,91 @@
-#recipe-details {
-    border: 2px solid black;
-    width: 300px;
-    padding: 10px;
-    background-color: #f9f9f9;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    transition: transform 0.2s ease-in-out;
-
-}
 body {
-    background-color: rgb(215, 244, 244);
-    text-align: center;
+  background-color: rgb(215, 244, 244);
+  text-align: center;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
 
+.recipe-details-box {
+  /* border: 2px solid black; */
+  max-width: 600px;
+  /* margin: 0 auto; */
+  padding: 10px;
+  /* background-color: rgba(0, 0, 0, 0.05); */
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  transition: transform 0.2s ease-in-out;
+  text-align: left;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border: 3px solid black;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+p {
+  color: #333;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  text-align: center;
+  font-weight: 400;
+  transition: color 0.3s ease;
 }
 
 ul {
-    text-align: left;
-    list-style-type: none;
+  text-align: left;
+  list-style-type: none;
 }
 
 ol {
-    text-align: left;
+  text-align: left;
 }
-#recipe-details h2 {
-    color: #333;
+h2 {
+  color: #2c3e50;
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-align: left;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
 }
-#recipe-details h3 {
-    color: #555;
+
+h4 {
+  color: #34495e;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+a {
+  color: #2980b9;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+button:hover {
+  background-color: #2980b9;
+  transform: scale(1.05);
+}
+button:active {
+  background-color: #1a5276;
+  transform: scale(0.95);
 }
