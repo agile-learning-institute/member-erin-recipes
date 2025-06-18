@@ -1,24 +1,19 @@
 body {
   background-color: rgb(215, 244, 244);
-  text-align: center;
+  /* text-align: center; */
   font-family: Arial, sans-serif;
   color: #333;
 }
 
-.recipe-details-box {
-  /* border: 2px solid black; */
-  max-width: 600px;
-  /* margin: 0 auto; */
-  padding: 10px;
-  /* background-color: rgba(0, 0, 0, 0.05); */
-  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
-  font-family: Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  transition: transform 0.2s ease-in-out;
-  text-align: left;
+.title {
+  color: #2c3e50;
+  font-size: 45px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
 }
 
 img {
@@ -29,16 +24,67 @@ img {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
   transition: transform 0.3s ease;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.description-box {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  line-height: 1.5;
+  margin-top: 20px;
+}
+
+.description {
+  font-size: 25px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: bold;
+  line-height: 1.6;
+  transition: color 0.3s ease;
+}
+
+.recipe-details-box,
+.ingredients-box,
+.directions-box,
+.nutrition-box {
+  /* border: 2px solid black; */
+  max-width: 600px;
+  /* margin: 0 auto; */
+  padding: 10px;
+  /* background-color: rgba(0, 0, 0, 0.05); */
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+  /* font-family: Arial, sans-serif; */
+  /* font-size: 16px; */
+  line-height: 1.5;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  transition: transform 0.2s ease-in-out;
+  text-align: left;
 }
 
 p {
   color: #333;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1.6;
   margin-bottom: 15px;
-  text-align: center;
+  /* text-align: center; */
   font-weight: 400;
   transition: color 0.3s ease;
+}
+
+.ingredients, .directions, .nutrition, .recipe-details {
+  font-size: 25px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: bold;
+  max-width: 30%;
+  text-decoration: underline;
 }
 
 ul {
@@ -49,7 +95,15 @@ ul {
 ol {
   text-align: left;
 }
-h2 {
+
+li {
+  color: #34495e;
+  font-size: 16px;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+/* h2 {
   color: #2c3e50;
   font-size: 24px;
   margin-bottom: 10px;
@@ -58,7 +112,7 @@ h2 {
   text-transform: uppercase;
   letter-spacing: 1px;
   transition: color 0.3s ease;
-}
+} */
 
 h4 {
   color: #34495e;
